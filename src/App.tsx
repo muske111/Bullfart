@@ -89,7 +89,7 @@ function App() {
             <a href="https://x.com/i/communities/1922225963641012244" className="text-amber-800 hover:text-amber-600 transition-colors transform hover:scale-125">
               <Twitter className="w-8 h-8" />
             </a>
-            <a href="@BULL_FART" className="text-amber-800 hover:text-amber-600 transition-colors transform hover:scale-125">
+            <a href="https://t.me/bull_fart" className="text-amber-800 hover:text-amber-600 transition-colors transform hover:scale-125">
               <MessageCircle className="w-8 h-8" />
             </a>
           </div>
