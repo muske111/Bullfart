@@ -86,10 +86,10 @@ function App() {
         {/* Social Links */}
         <div className="container mx-auto px-4 py-16">
           <div className="flex justify-center gap-6">
-            <a href="#" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
+            <a href="https://x.com/i/communities/1922225963641012244" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
               <Twitter className="w-8 h-8" />
             </a>
-            <a href="https://x.com/i/communities/1922225963641012244" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
+            <a href="@BULL_FART" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
               <Telegram className="w-8 h-8" />
             </a>
           </div>
