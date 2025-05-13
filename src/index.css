@@ -20,6 +20,41 @@
   }
 }
 
+@keyframes fart {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes eat {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .floating-bg {
   animation: float 6s ease-in-out infinite;
+}
+
+.fart-cloud {
+  animation: fart 3s ease-in-out infinite;
+}
+
+.eating-bull {
+  animation: eat 2s ease-in-out infinite;
 }
