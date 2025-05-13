@@ -47,6 +47,21 @@
   }
 }
 
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(4deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .floating-bg {
   animation: float 6s ease-in-out infinite;
 }
@@ -57,4 +72,22 @@
 
 .eating-bull {
   animation: eat 2s ease-in-out infinite;
+}
+
+.grass-blade {
+  width: 2px;
+  background: linear-gradient(to top, #2E7D32, #4CAF50);
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom center;
+  animation: sway 2s ease-in-out infinite;
+}
+
+.grass-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  overflow: hidden;
 }
