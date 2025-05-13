@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coins, Rocket, Users, Shield, Twitter, Instagram as Telegram } from 'lucide-react';
+import { Coins, Rocket, Users, Shield, Twitter } from 'lucide-react';
 
 function App() {
   return (
@@ -90,7 +90,7 @@ function App() {
               <Twitter className="w-8 h-8" />
             </a>
             <a href="@BULL_FART" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
-              <Telegram className="w-8 h-8" />
+              <Twitter className="w-8 h-8" />
             </a>
           </div>
         </div>
