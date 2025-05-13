@@ -4,15 +4,31 @@ import { Coins, Rocket, Users, Shield, Twitter, MessageCircle } from 'lucide-rea
 function App() {
   return (
     <div className="min-h-screen bg-white text-amber-900 relative overflow-hidden">
-      {/* Bull Background */}
-      <div 
-        className="absolute inset-0 opacity-10 bg-cover bg-center z-0 floating-bg"
-        style={{
-          backgroundImage: 'url("https://images.pexels.com/photos/18923586/pexels-photo-18923586.png")',
-          backgroundRepeat: 'repeat',
-          backgroundSize: '400px',
-        }}
-      />
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Grass Pattern */}
+        <div 
+          className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-green-600 to-green-500"
+          style={{
+            backgroundImage: 'radial-gradient(circle at 30% 107%, #8BC34A 0%, #4CAF50 5%, #2E7D32 45%, #1B5E20 60%, #004D40 90%)',
+          }}
+        />
+        
+        {/* Floating Coins Background */}
+        <div 
+          className="absolute inset-0 opacity-10 bg-cover bg-center z-0 floating-bg"
+          style={{
+            backgroundImage: 'url("https://images.pexels.com/photos/18923586/pexels-photo-18923586.png")',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '400px',
+          }}
+        />
+
+        {/* Animated Fart Clouds */}
+        <div className="absolute bottom-40 right-20 w-32 h-32 bg-amber-200 rounded-full blur-3xl opacity-30 fart-cloud" />
+        <div className="absolute bottom-60 right-40 w-24 h-24 bg-amber-300 rounded-full blur-2xl opacity-20 fart-cloud" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-32 right-60 w-20 h-20 bg-amber-400 rounded-full blur-xl opacity-25 fart-cloud" style={{ animationDelay: '2s' }} />
+      </div>
 
       {/* Content */}
       <div className="relative z-10">
@@ -31,7 +47,7 @@ function App() {
                 View Chart
               </a>
             </div>
-            <div className="max-w-md mx-auto mb-12 relative">
+            <div className="max-w-md mx-auto mb-12 relative eating-bull">
               <img 
                 src="https://raw.githubusercontent.com/muske111/Bullfart/main/bullfart.webp" 
                 alt="Bull Market" 
