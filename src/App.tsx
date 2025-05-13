@@ -79,6 +79,21 @@ function App() {
                 className="rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 to-transparent rounded-2xl"></div>
+              
+              {/* Grass below the bull image */}
+              <div className="absolute -bottom-8 left-0 right-0 overflow-hidden h-16">
+                {grassBlades.map((blade, index) => (
+                  <div
+                    key={`image-grass-${index}`}
+                    className="grass-blade"
+                    style={{
+                      left: `${blade.left}%`,
+                      height: `${blade.height * 0.7}px`,
+                      animationDelay: `${blade.delay}s`
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
