@@ -5,26 +5,34 @@ function App() {
   const [grassBlades, setGrassBlades] = useState<Array<{ left: number; height: number; delay: number }>>([]);
 
   useEffect(() => {
-    const blades = Array.from({ length: 120 }, () => ({
+    const blades = Array.from({ length: 150 }, () => ({
       left: Math.random() * 100,
-      height: 20 + Math.random() * 20,
+      height: 30 + Math.random() * 30,
       delay: Math.random() * 2
     }));
     setGrassBlades(blades);
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-amber-900 relative overflow-hidden">
-      {/* Animated Background Elements */}
+    <div className="min-h-screen bg-gradient-to-b from-sky-400 to-sky-200 text-amber-900 relative overflow-hidden">
+      {/* Farmland Background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Grass Pattern */}
-        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-green-600 to-green-500"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 30% 107%, #8BC34A 0%, #4CAF50 5%, #2E7D32 45%, #1B5E20 60%, #004D40 90%)',
-          }}
-        />
+        {/* Sky */}
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-400 via-sky-300 to-sky-200" />
         
-        {/* Animated Grass */}
+        {/* Sun */}
+        <div className="absolute top-10 right-20 w-32 h-32 bg-yellow-300 rounded-full blur-xl opacity-80" />
+        
+        {/* Clouds */}
+        <div className="absolute top-20 left-1/4 w-40 h-16 bg-white rounded-full blur-lg opacity-80 floating-cloud" />
+        <div className="absolute top-40 right-1/3 w-48 h-20 bg-white rounded-full blur-lg opacity-70 floating-cloud" style={{ animationDelay: '2s' }} />
+        
+        {/* Rolling Hills */}
+        <div className="absolute bottom-0 w-full h-64 bg-green-800 rounded-t-[100%] transform translate-y-32" />
+        <div className="absolute bottom-0 w-full h-48 bg-green-700 rounded-t-[100%] transform translate-y-24" />
+        <div className="absolute bottom-0 w-full h-32 bg-green-600 rounded-t-[100%] transform translate-y-16" />
+        
+        {/* Animated Grass Line */}
         <div className="grass-container">
           {grassBlades.map((blade, index) => (
             <div
@@ -38,21 +46,6 @@ function App() {
             />
           ))}
         </div>
-        
-        {/* Floating Coins Background */}
-        <div 
-          className="absolute inset-0 opacity-10 bg-cover bg-center z-0 floating-bg"
-          style={{
-            backgroundImage: 'url("https://images.pexels.com/photos/18923586/pexels-photo-18923586.png")',
-            backgroundRepeat: 'repeat',
-            backgroundSize: '400px',
-          }}
-        />
-
-        {/* Animated Fart Clouds */}
-        <div className="absolute bottom-40 right-20 w-32 h-32 bg-amber-200 rounded-full blur-3xl opacity-30 fart-cloud" />
-        <div className="absolute bottom-60 right-40 w-24 h-24 bg-amber-300 rounded-full blur-2xl opacity-20 fart-cloud" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-32 right-60 w-20 h-20 bg-amber-400 rounded-full blur-xl opacity-25 fart-cloud" style={{ animationDelay: '2s' }} />
       </div>
 
       {/* Content */}
@@ -101,22 +94,22 @@ function App() {
         {/* Features */}
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-amber-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Coins className="w-12 h-12 text-amber-800 mb-4" />
               <h3 className="text-2xl font-bangers mb-2 text-amber-900 tracking-wide">100M Total Supply</h3>
               <p className="font-righteous text-amber-800">Limited supply creates scarcity and potential for growth</p>
             </div>
-            <div className="bg-amber-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Shield className="w-12 h-12 text-amber-800 mb-4" />
               <h3 className="text-2xl font-bangers mb-2 text-amber-900 tracking-wide">LP Locked</h3>
               <p className="font-righteous text-amber-800">Liquidity locked for 1 year ensuring trading stability</p>
             </div>
-            <div className="bg-amber-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Users className="w-12 h-12 text-amber-800 mb-4" />
               <h3 className="text-2xl font-bangers mb-2 text-amber-900 tracking-wide">Community Driven</h3>
               <p className="font-righteous text-amber-800">Power to the people - community governance enabled</p>
             </div>
-            <div className="bg-amber-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Rocket className="w-12 h-12 text-amber-800 mb-4" />
               <h3 className="text-2xl font-bangers mb-2 text-amber-900 tracking-wide">Moon Mission</h3>
               <p className="font-righteous text-amber-800">Strategic marketing and development roadmap</p>
@@ -128,11 +121,11 @@ function App() {
         <div className="container mx-auto px-4 py-16">
           <h2 className="text-5xl font-bangers text-center mb-12 text-amber-900 tracking-wide">Tokenomics</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-amber-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <h3 className="text-3xl font-bangers mb-4 text-amber-900 tracking-wide">Buy Tax: 0%</h3>
               <p className="font-righteous text-amber-800 text-lg">No taxes on buys! Trade freely!</p>
             </div>
-            <div className="bg-amber-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <h3 className="text-3xl font-bangers mb-4 text-amber-900 tracking-wide">Sell Tax: 0%</h3>
               <p className="font-righteous text-amber-800 text-lg">No taxes on sells! Trade freely!</p>
             </div>
