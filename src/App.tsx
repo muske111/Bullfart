@@ -22,7 +22,7 @@ function App() {
             <h1 className="text-7xl font-bangers mb-4 text-white tracking-wider">
               $BFR - BULFART
             </h1>
-            <p className="text-3xl font-righteous mb-8 text-white">The Most Explosive Meme Coin in Crypto! 🐂💨</p>
+            <p className="text-3xl font-righteous mb-8 text-white">The Most Explosive Meme Coin in Crypto!</p>
             <div className="flex justify-center gap-4 mb-8">
               <a href="#" className="bg-amber-600 hover:bg-amber-700 text-white font-righteous font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
                 Buy Now
