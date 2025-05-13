@@ -89,7 +89,7 @@ function App() {
             <a href="#" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
               <Twitter className="w-8 h-8" />
             </a>
-            <a href="#" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
+            <a href="https://x.com/i/communities/1922225963641012244" className="text-white hover:text-amber-200 transition-colors transform hover:scale-125">
               <Telegram className="w-8 h-8" />
             </a>
           </div>
