@@ -35,20 +35,40 @@
   }
 }
 
-@keyframes cloudFloat {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+@keyframes cloud-float-1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, -10px); }
 }
 
-.floating-cloud {
-  animation: cloudFloat 10s ease-in-out infinite;
+@keyframes cloud-float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-40px, -15px); }
+}
+
+@keyframes cloud-float-3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -5px); }
+}
+
+@keyframes cloud-float-4 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-25px, -8px); }
+}
+
+.cloud-float-1 {
+  animation: cloud-float-1 20s ease-in-out infinite;
+}
+
+.cloud-float-2 {
+  animation: cloud-float-2 25s ease-in-out infinite;
+}
+
+.cloud-float-3 {
+  animation: cloud-float-3 22s ease-in-out infinite;
+}
+
+.cloud-float-4 {
+  animation: cloud-float-4 28s ease-in-out infinite;
 }
 
 .eating-bull {
