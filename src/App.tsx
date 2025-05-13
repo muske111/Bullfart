@@ -33,7 +33,7 @@ function App() {
             </div>
             <div className="max-w-md mx-auto mb-12 relative">
               <img 
-                src="https://images.pexels.com/photos/6770610/pexels-photo-6770610.jpeg" 
+                src="https://github.com/muske111/Bullfart/blob/main/DALL·E%202025-05-13%2013.03.04%20-%20A%20humorous%20and%20cartoonish%20image%20of%20a%20bull%20releasing%20a%20fart%20cloud,%20with%20the%20fart%20cloud%20shaped%20like%20a%20coin%20labeled%20'BullFart%20Coin.'%20The%20bull%20is%20standing.webp" 
                 alt="Bull Market" 
                 className="rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
               />
