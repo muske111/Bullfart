@@ -32,10 +32,10 @@ function App() {
         <div className="absolute top-16 right-1/4 w-48 h-16 bg-gray-400/30 rounded-full blur-md opacity-55 cloud-float-3" />
         <div className="absolute top-32 right-1/3 w-32 h-12 bg-gray-400/30 rounded-full blur-md opacity-45 cloud-float-4" />
         
-        {/* Rolling Hills with gradient */}
-        <div className="absolute bottom-0 w-full h-64 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 rounded-t-[100%] transform translate-y-32" />
-        <div className="absolute bottom-0 w-full h-48 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-t-[100%] transform translate-y-24" />
-        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 rounded-t-[100%] transform translate-y-16" />
+        {/* Rolling Hills with green gradient */}
+        <div className="absolute bottom-0 w-full h-64 bg-gradient-to-r from-green-900 via-green-800 to-green-900 rounded-t-[100%] transform translate-y-32" />
+        <div className="absolute bottom-0 w-full h-48 bg-gradient-to-r from-green-800 via-green-700 to-green-800 rounded-t-[100%] transform translate-y-24" />
+        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-r from-green-700 via-green-600 to-green-700 rounded-t-[100%] transform translate-y-16" />
         
         {/* Animated Grass Line */}
         <div className="grass-container">
