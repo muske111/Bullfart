@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Coins, Rocket, Users, Shield, Twitter, MessageCircle } from 'lucide-react';
 
 function App() {
+  const [grassBlades, setGrassBlades] = useState<Array<{ left: number; height: number; delay: number }>>([]);
+
+  useEffect(() => {
+    const blades = Array.from({ length: 120 }, () => ({
+      left: Math.random() * 100,
+      height: 20 + Math.random() * 20,
+      delay: Math.random() * 2
+    }));
+    setGrassBlades(blades);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white text-amber-900 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grass Pattern */}
-        <div 
-          className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-green-600 to-green-500"
+        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-green-600 to-green-500"
           style={{
             backgroundImage: 'radial-gradient(circle at 30% 107%, #8BC34A 0%, #4CAF50 5%, #2E7D32 45%, #1B5E20 60%, #004D40 90%)',
           }}
         />
+        
+        {/* Animated Grass */}
+        <div className="grass-container">
+          {grassBlades.map((blade, index) => (
+            <div
+              key={index}
+              className="grass-blade"
+              style={{
+                left: `${blade.left}%`,
+                height: `${blade.height}px`,
+                animationDelay: `${blade.delay}s`
+              }}
+            />
+          ))}
+        </div>
         
         {/* Floating Coins Background */}
         <div 
@@ -116,3 +141,5 @@ function App() {
 }
 
 export default App;
+
+export default App
