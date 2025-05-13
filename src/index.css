@@ -77,7 +77,7 @@
 
 .grass-blade {
   width: 3px;
-  background: linear-gradient(to top, #2E7D32, #4CAF50);
+  background: linear-gradient(to top, #1a4731, #2f6b39);
   position: absolute;
   bottom: 0;
   transform-origin: bottom center;
