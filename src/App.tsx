@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coins, Rocket, Users, Shield, Twitter, Telegram } from 'lucide-react';
+import { Coins, Rocket, Users, Shield, Twitter, Instagram as Telegram } from 'lucide-react';
 
 function App() {
   return (
