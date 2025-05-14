@@ -59,7 +59,7 @@ function App() {
         <div className="container mx-auto px-4 py-16">
           <div className="text-center">
             <h1 className="text-7xl font-bangers mb-4 text-white tracking-wider">
-              $BFR - BULFART
+              $BFR - BULLFART
             </h1>
             <p className="text-3xl font-righteous mb-8 text-gray-200">The Most Explosive Meme Coin in Crypto!</p>
             <div className="flex justify-center gap-4 mb-8">
