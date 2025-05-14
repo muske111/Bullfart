@@ -78,9 +78,6 @@ function App() {
                 className="rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent rounded-2xl"></div>
-
-
-               <h2 className="text-5xl font-bangers text-center mb-12 text-white tracking-wide">Tokenomics</h2>
               
               {/* Grass below the bull image */}
               <div className="absolute -bottom-8 left-0 right-0 overflow-hidden h-16">
@@ -100,6 +97,8 @@ function App() {
           </div>
         </div>
 
+ <h2 className="text-5xl font-bangers text-center mb-12 text-white tracking-wide">Tokenomics</h2>
+        
         {/* Features */}
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
