@@ -106,7 +106,7 @@ function App() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Shield className="w-12 h-12 text-gray-200 mb-4" />
-              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">LP Locked</h3>
+              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">Secured tighter than a bull’s... well, you know. No leaks here! </h3>
               <p className="font-righteous text-gray-200">Liquidity Locked, No Farts Allowed</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
