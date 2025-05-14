@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, Coins, Fire } from 'lucide-react';
+import { Rocket, Coins, Siren as Fire } from 'lucide-react';
 
 function App() {
   return (
