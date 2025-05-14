@@ -142,7 +142,7 @@ function App() {
         {/* Social Links */}
         <div className="container mx-auto px-4 py-16">
           <div className="flex justify-center gap-6">
-            <a href="https://x.com/i/communities/1922225963641012244" className="text-gray-200 hover:text-white transition-colors transform hover:scale-125">
+            <a href="https://x.com/BullFart_Coin" className="text-gray-200 hover:text-white transition-colors transform hover:scale-125">
               <Twitter className="w-8 h-8" />
             </a>
             <a href="https://t.me/bull_fart" className="text-gray-200 hover:text-white transition-colors transform hover:scale-125">
