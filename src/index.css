@@ -7,3 +7,90 @@
     font-family: 'Righteous', cursive;
   }
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(4deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes cloud-float-1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, -10px); }
+}
+
+@keyframes cloud-float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-40px, -15px); }
+}
+
+@keyframes cloud-float-3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -5px); }
+}
+
+@keyframes cloud-float-4 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-25px, -8px); }
+}
+
+.cloud-float-1 {
+  animation: cloud-float-1 20s ease-in-out infinite;
+}
+
+.cloud-float-2 {
+  animation: cloud-float-2 25s ease-in-out infinite;
+}
+
+.cloud-float-3 {
+  animation: cloud-float-3 22s ease-in-out infinite;
+}
+
+.cloud-float-4 {
+  animation: cloud-float-4 28s ease-in-out infinite;
+}
+
+.eating-bull {
+  animation: float 6s ease-in-out infinite;
+}
+
+.grass-blade {
+  width: 3px;
+  background: linear-gradient(to top, #15803d, #22c55e);
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom center;
+  animation: sway 2s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+.grass-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  overflow: hidden;
+  z-index: 1;
+}
