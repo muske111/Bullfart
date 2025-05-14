@@ -127,7 +127,6 @@ function App() {
 
         {/* Tokenomics */}
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-5xl font-bangers text-center mb-12 text-white tracking-wide">Tokenomics</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <h3 className="text-3xl font-bangers mb-4 text-white tracking-wide">Buy Tax: 0%</h3>
