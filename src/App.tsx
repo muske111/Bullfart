@@ -111,12 +111,12 @@ function App() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Users className="w-12 h-12 text-gray-200 mb-4" />
-              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">Community-Driven, Powered by Fart (and Fun!)</h3>
+              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">Powered by YOU! The more wind you blow, the further we go!</h3>
               <p className="font-righteous text-gray-200">Power to the people - community governance enabled</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Rocket className="w-12 h-12 text-gray-200 mb-4" />
-              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">Our Moon Mission is Blowing Up!</h3>
+              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">Ready for takeoff! We’re headed straight to the moon, fueled by some serious "bullish" wind!</h3>
               <p className="font-righteous text-gray-200">Strategic marketing and development roadmap</p>
             </div>
           </div>
