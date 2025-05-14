@@ -101,13 +101,13 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Coins className="w-12 h-12 text-gray-200 mb-4" />
-              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">100M Total Supply</h3>
+              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">100 Million Bullfarts in Circulation</h3>
               <p className="font-righteous text-gray-200">Limited supply creates scarcity and potential for growth</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Shield className="w-12 h-12 text-gray-200 mb-4" />
               <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">LP Locked</h3>
-              <p className="font-righteous text-gray-200">Liquidity locked for 1 year ensuring trading stability</p>
+              <p className="font-righteous text-gray-200">Liquidity Locked, No Farts Allowed</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Users className="w-12 h-12 text-gray-200 mb-4" />
