@@ -129,11 +129,11 @@ function App() {
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
-              <h3 className="text-3xl font-bangers mb-4 text-white tracking-wide">Buy Tax: 0%</h3>
+              <h3 className="text-3xl font-bangers mb-4 text-white tracking-wide">Zero Farts, Zero Fees!: 0%</h3>
               <p className="font-righteous text-gray-200 text-lg">No taxes on buys! Trade freely!</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
-              <h3 className="text-3xl font-bangers mb-4 text-white tracking-wide">Sell Tax: 0%</h3>
+              <h3 className="text-3xl font-bangers mb-4 text-white tracking-wide">No Farts, No Fees!: 0%</h3>
               <p className="font-righteous text-gray-200 text-lg">No taxes on sells! Trade freely!</p>
             </div>
           </div>
