@@ -36,24 +36,7 @@ function App() {
         <div className="absolute bottom-0 w-full h-64 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 rounded-t-[100%] transform translate-y-32" />
         <div className="absolute bottom-0 w-full h-48 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-t-[100%] transform translate-y-24" />
         <div className="absolute bottom-0 w-full h-32 bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 rounded-t-[100%] transform translate-y-16" />
-        
-        {/* Animated Grass Line */}
-        <div className="grass-container">
-          {grassBlades.map((blade, index) => (
-            <div
-              key={index}
-              className="grass-blade"
-              style={{
-                left: `${blade.left}%`,
-                height: `${blade.height}px`,
-                animationDelay: `${blade.delay}s`
-              }}
-            />
-          ))}
-        </div>
-      </div>
-
-      
+    
       {/* Content */}
       <div className="relative z-10">
         {/* Hero Section */}
