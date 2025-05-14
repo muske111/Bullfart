@@ -72,7 +72,7 @@ function App() {
             </div>
             <div className="max-w-md mx-auto mb-12 relative eating-bull">
               <img 
-                src="https://raw.githubusercontent.com/Bullfart/blob/main/finalbullfart.png" 
+                src="https://raw.githubusercontent.com/Bullfart/Bullfart/main/finalbullfart.png"
                 alt="Bull Market" 
                 className="rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
               />
