@@ -1,18 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Coins, Rocket, Users, Shield, Twitter, MessageCircle } from 'lucide-react';
 
 function App() {
-  const [grassBlades, setGrassBlades] = useState<Array<{ left: number; height: number; delay: number }>>([]);
-
-  useEffect(() => {
-    const blades = Array.from({ length: 150 }, () => ({
-      left: Math.random() * 100,
-      height: 30 + Math.random() * 30,
-      delay: Math.random() * 2
-    }));
-    setGrassBlades(blades);
-  }, []);
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 text-white relative overflow-hidden">
       {/* Farmland Background */}
@@ -36,7 +25,8 @@ function App() {
         <div className="absolute bottom-0 w-full h-64 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 rounded-t-[100%] transform translate-y-32" />
         <div className="absolute bottom-0 w-full h-48 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-t-[100%] transform translate-y-24" />
         <div className="absolute bottom-0 w-full h-32 bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 rounded-t-[100%] transform translate-y-16" />
-    
+      </div>
+
       {/* Content */}
       <div className="relative z-10">
         {/* Hero Section */}
@@ -61,27 +51,13 @@ function App() {
                 className="rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent rounded-2xl"></div>
-              
-              {/* Grass below the bull image */}
-              <div className="absolute -bottom-8 left-0 right-0 overflow-hidden h-16">
-                {grassBlades.map((blade, index) => (
-                  <div
-                    key={`image-grass-${index}`}
-                    className="grass-blade"
-                    style={{
-                      left: `${blade.left}%`,
-                      height: `${blade.height * 0.7}px`,
-                      animationDelay: `${blade.delay}s`
-                    }}
-                  />
-                ))}
-              </div>
             </div>
           </div>
         </div>
 
- <h2 className="text-5xl font-bangers text-center mb-12 text-white tracking-wide">Tokenomics</h2>
-        
+        {/* Tokenomics Section */}
+        <h2 className="text-5xl font-bangers text-center mb-12 text-white tracking-wide">Tokenomics</h2>
+
         {/* Features */}
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -92,7 +68,7 @@ function App() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
               <Shield className="w-12 h-12 text-gray-200 mb-4" />
-              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">Secured tighter than a bull’s... well, you know. No leaks here! </h3>
+              <h3 className="text-2xl font-bangers mb-2 text-white tracking-wide">Secured tighter than a bull’s... well, you know. No leaks here!</h3>
               <p className="font-righteous text-gray-200">Liquidity Locked, No Farts Allowed</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
@@ -108,7 +84,7 @@ function App() {
           </div>
         </div>
 
-        {/* Tokenomics */}
+        {/* Tokenomics Boxes */}
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:scale-105 transition-all">
@@ -135,5 +111,7 @@ function App() {
         </div>
       </div>
     </div>
+  );
 }
+
 export default App;
