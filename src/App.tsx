@@ -40,7 +40,7 @@ function App() {
               <a href="#" className="bg-white hover:bg-gray-200 text-gray-900 font-righteous font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
                 Buy Now
               </a>
-              <a href="#" className="border-2 border-white hover:bg-white/20 text-white font-righteous font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
+              <a href="https://gmgn.ai/sol/token/o3bscjhccUj8nXaSmC4ALMkZMgLG6uwJPWbMAYMpump" className="border-2 border-white hover:bg-white/20 text-white font-righteous font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
                 View Chart
               </a>
             </div>
