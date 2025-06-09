@@ -37,7 +37,7 @@ function App() {
             </h1>
             <p className="text-3xl font-righteous mb-8 text-gray-200">The Most Explosive Meme Coin in Crypto!</p>
             <div className="flex justify-center gap-4 mb-8">
-              <a href="#" className="bg-white hover:bg-gray-200 text-gray-900 font-righteous font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
+              <a href="https://gmgn.ai/sol/token/o3bscjhccUj8nXaSmC4ALMkZMgLG6uwJPWbMAYMpump" className="bg-white hover:bg-gray-200 text-gray-900 font-righteous font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
                 Buy Now
               </a>
               <a href="https://gmgn.ai/sol/token/o3bscjhccUj8nXaSmC4ALMkZMgLG6uwJPWbMAYMpump" className="border-2 border-white hover:bg-white/20 text-white font-righteous font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
