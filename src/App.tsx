@@ -56,8 +56,7 @@ function App() {
         </div>
 
         {/* Tokenomics Section */}
-        <h2 className="text-5xl font-bangers text-center mb-12 text-white tracking-wide">Tokenomics</h2>
-
+        <h2 className="text-5xl font-bangers text-center mb-12 text-white trackinContract Address:  o3bscjhccUj8nXaSmC4ALMkZMgLG6uwJPWbMAYMpump</h2>
         {/* Features */}
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
